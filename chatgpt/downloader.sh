@@ -8,6 +8,7 @@ set -x
 add_domain() {
 curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/antonme/ipnames/master/dns-openai.txt > /tmp/"$1"_domain.txt
 curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/antonme/ipnames/master/ext-dns-openai.txt >> /tmp/"$1"_domain.txt
+dos2unix /tmp/"$1"_domain.txt
 sort /tmp/"$1"_domain.txt | uniq | sponge /tmp/"$1"_domain.txt
 # Prepare domain
 # Delete subdomain in file
