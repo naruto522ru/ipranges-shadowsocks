@@ -1,6 +1,6 @@
 # IPRanges for Shadowsocks
 
-List all IP ranges from: Google, Bing, Amazon, Microsoft, Azure, Oracle, DigitalOcean, GitHub, Facebook, Twitter, Linode, Yandex, Vkontakte, Telegram, Netflix, Valve, Spotify, ChatGPT, YouTube with regular auto-updates for Shadowsocks in ACL format.
+List all IP ranges (or to a lesser extent just the domain) from: Google, Bing, Amazon, Microsoft, Azure, Oracle, DigitalOcean, GitHub, Facebook, Twitter, Linode, Yandex, Vkontakte, Telegram, Netflix, Valve, Spotify, ChatGPT, YouTube with regular auto-updates for Shadowsocks in ACL format.
 
 All lists are obtained from public sources.
 
