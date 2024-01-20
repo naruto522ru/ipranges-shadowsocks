@@ -1,6 +1,7 @@
 [bypass_all]
 [proxy_list]
 (?:^|\.)juaneloturriano\.oaistore\.es$
+(?:^|\.)oaistatic\.com$
 (?:^|\.)openai\.com$
 (?:^|\.)openai\.com\.cdn\.cloudflare\.net$
 (?:^|\.)openai\.fund$
@@ -27,7 +28,7 @@
 104.18.6.192
 104.18.7.192
 133.62.137.52
-142.251.16.121
+142.251.163.121
 159.69.152.55
 172.64.146.98
 172.64.148.171
