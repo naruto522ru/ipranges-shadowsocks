@@ -1,6 +1,7 @@
 [bypass_all]
 [proxy_list]
 (?:^|\.)juaneloturriano\.oaistore\.es$
+(?:^|\.)oaistatic\.com$
 (?:^|\.)openai\.com$
 (?:^|\.)openai\.com\.cdn\.cloudflare\.net$
 (?:^|\.)openai\.fund$
