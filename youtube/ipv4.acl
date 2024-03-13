@@ -22,7 +22,6 @@
 (?:^|\.)video\.google\.com\.au$
 (?:^|\.)video-youtube\.pp\.ua$
 (?:^|\.)wapo-youtube\.appspot\.com$
-(?:^|\.)youtu\.be$
 (?:^|\.)youtube\.com$
 (?:^|\.)youtube\.googleapis\.com$
 (?:^|\.)youtubei\.googleapis\.com$
