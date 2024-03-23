@@ -2,6 +2,7 @@
 [proxy_list]
 (?:^|\.)adblocker-for-youtube\.freeonlineapps\.net$
 (?:^|\.)audio-equalizer-youtube\.freespeedcheck\.net$
+(?:^|\.)deviceintegritytokens-pa\.googleapis\.com$
 (?:^|\.)de\.youtube\.co$
 (?:^|\.)de\.youtube\.wikia\.com$
 (?:^|\.)displayvideo\.googleapis\.com$
@@ -22,6 +23,7 @@
 (?:^|\.)video\.google\.com\.au$
 (?:^|\.)video-youtube\.pp\.ua$
 (?:^|\.)wapo-youtube\.appspot\.com$
+(?:^|\.)youtu\.be$
 (?:^|\.)youtube\.com$
 (?:^|\.)youtube\.googleapis\.com$
 (?:^|\.)youtubei\.googleapis\.com$
