@@ -14,4 +14,3 @@ All lists are obtained from public sources.
 
 https://github.com/naruto522ru/ipranges
 
-https://github.com/naruto522ru/ipranges-unmerging
