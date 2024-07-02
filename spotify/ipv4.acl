@@ -1,5 +1,10 @@
 [bypass_all]
 [proxy_list]
-(?:^|\.)404:$
-(?:^|\.)Not$
-(?:^|\.)Found$
+(?:^|\.)api2\.branch\.io$
+(?:^|\.)audio4-ak-spotify-com\.akamaized\.net$
+(?:^|\.)#cdn\.cookielaw\.org$
+(?:^|\.)#In$
+(?:^|\.)App$
+(?:^|\.)Spotify$
+(?:^|\.)sentry\.io$
+(?:^|\.)spotify\.com$
