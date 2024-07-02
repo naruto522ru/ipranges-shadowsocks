@@ -2,9 +2,6 @@
 [proxy_list]
 (?:^|\.)api2\.branch\.io$
 (?:^|\.)audio4-ak-spotify-com\.akamaized\.net$
-(?:^|\.)#cdn\.cookielaw\.org$
-(?:^|\.)#In$
-(?:^|\.)App$
-(?:^|\.)Spotify$
+(?:^|\.)cdn\.cookielaw\.org$
 (?:^|\.)sentry\.io$
 (?:^|\.)spotify\.com$
