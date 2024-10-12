@@ -11,12 +11,10 @@ dos2unix /tmp/"$1"_domain.txt
 sort /tmp/"$1"_domain.txt | uniq | sponge /tmp/"$1"_domain.txt
 # Prepare domain
 # Delete subdomain in file
-#cat /tmp/"$1"_domain.txt | grep -vEe '(.openai.com|.openai.org|.openai.com.cdn.cloudflare.net|.oaistatic.com)$' > /tmp/"$1"_domain_prepare.txt
-#sort -h /tmp/"$1"_domain_prepare.txt | uniq | sponge /tmp/"$1"_domain_prepare.txt
+cat /tmp/"$1"_domain.txt | grep -vEe '(.discord.gg)$' > /tmp/"$1"_domain_prepare.txt
+sort -h /tmp/"$1"_domain_prepare.txt | uniq | sponge /tmp/"$1"_domain_prepare.txt
 # Replace . on \.
-#sed -i 's/\./\\./g' /tmp/"$1"_domain_prepare.txt
-sed -i 's/\./\\./g' /tmp/"$1"_domain.txt
-mv -f /tmp/"$1"_domain.txt /tmp/"$1"_domain_prepare.txt
+sed -i 's/\./\\./g' /tmp/"$1"_domain_prepare.txt
 # ipv4
 for domain in $(cat /tmp/${1}_domain_prepare.txt); do echo \(\?\:\^\|\\\.\)${domain}$ >> ${1}/ipv4.acl; done
 # ipv6
