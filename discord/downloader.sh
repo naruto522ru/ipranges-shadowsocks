@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 set -euo pipefail
 set -x
 
@@ -42,6 +41,8 @@ echo -e "[bypass_all]\n[proxy_list]" | tee discord/ipv4.acl
 #echo -e "[bypass_all]\n[proxy_list]" | tee discord/ipv6.acl
 
 add_domain 'discord' || echo 'failed'
+
+curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/naruto522ru/ipranges/refs/heads/main/discord/ipv4_merged.txt | sed 's/\/32//g' >> discord/ipv4.acl
 
 # sort & uniq
 #sort -h /tmp/discord-ipv4.txt | uniq >> discord/ipv4.acl
