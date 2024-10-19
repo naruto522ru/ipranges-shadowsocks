@@ -1,9 +1,7 @@
 #!/bin/bash
 
-
 set -euo pipefail
 set -x
-
 
 # get CIDR from list
 get_prefix() {
@@ -24,6 +22,9 @@ echo -e "[bypass_all]\n[proxy_list]" | tee steam/ipv4.acl
 
 # Create/Prepare ACL List for Shadowsocks IPv6
 #echo -e "[bypass_all]\n[proxy_list]" | tee steam/ipv6.acl
+
+# Paste domain in ACL list
+for domain in $(cat steam/domain.txt | sed 's/\./\\./g'); do echo \(\?\:\^\|\\\.\)${domain}$ >> steam/ipv4.acl; done
 
 # sort & uniq
 sort -h /tmp/steam-ipv4.txt | uniq >> steam/ipv4.acl
