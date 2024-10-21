@@ -476,6 +476,7 @@
 (?:^|\.)www\.facebook\.it$
 (?:^|\.)www\.facebook\.jp$
 (?:^|\.)www\.facebook\.mx$
+(?:^|\.)www\.facebook\.net\.setia\.cloud$
 (?:^|\.)www\.facebook\.nl$
 (?:^|\.)www\.facebook\.no$
 (?:^|\.)www\.facebook\.se$
