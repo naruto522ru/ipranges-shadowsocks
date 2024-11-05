@@ -1,0 +1,35 @@
+name: "Update"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 20 * * *'
+
+jobs:
+  updater:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare packages
+        run: sudo apt-get update && sudo apt-get install -y dos2unix curl gawk bind9-dnsutils language-pack-ru language-pack-en locales moreutils coreutils util-linux bash git && sudo sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && sudo locale-gen --no-purge en_US.UTF-8
+
+      - name: Download CIDR list
+        env:
+          LANG: en_US.UTF-8
+          CHARSET: UTF-8
+        run: |
+          set -euo pipefail
+          set -x
+          find . -name downloader.sh| sort -h | awk '{print "Executing "$1"...";system("bash "$1)}'
+
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update ip ranges in ACL format for shadowsocks"
+          file_pattern: '*/*.acl'
+          commit_options: "--no-verify"
+          repository: .
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
