@@ -19,7 +19,7 @@ sort /tmp/"$1"_domain.txt | uniq | sponge /tmp/"$1"_domain.txt
 sed -i 's/\./\\./g' /tmp/"$1"_domain.txt
 mv -f /tmp/"$1"_domain.txt /tmp/"$1"_domain_prepare.txt
 # ipv4
-for domain in $(cat /tmp/${1}_domain_prepare.txt); do echo \(\?\:\^\|\\\.\)${domain}$ >> ${1}/ipv4.acl; done
+for domain in $(cat /tmp/${1}_domain_prepare.txt | sed '/.tk/d'); do echo \(\?\:\^\|\\\.\)${domain}$ >> ${1}/ipv4.acl; done
 # ipv6
 #for domain in $(cat /tmp/${1}_domain_prepare.txt); do echo \(\?\:\^\|\\\.\)${domain}$ >> ${1}/ipv6.acl; done
 }
