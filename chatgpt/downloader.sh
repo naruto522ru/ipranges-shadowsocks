@@ -14,6 +14,7 @@ sort /tmp/"$1"_domain.txt | uniq | sponge /tmp/"$1"_domain.txt
 # Delete subdomain in file
 cat /tmp/"$1"_domain.txt | grep -vEe '(.openai.com|.openai.org|.openai.com.cdn.cloudflare.net|.oaistatic.com)$' > /tmp/"$1"_domain_prepare.txt
 sort -h /tmp/"$1"_domain_prepare.txt | uniq | sponge /tmp/"$1"_domain_prepare.txt
+sed -i 's/^www.//g' /tmp/"$1"_domain_prepare.txt
 # Replace . on \.
 sed -i 's/\./\\./g' /tmp/"$1"_domain_prepare.txt
 # ipv4
