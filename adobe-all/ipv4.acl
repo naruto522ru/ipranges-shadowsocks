@@ -314,9 +314,9 @@
 (?:^|\.)wwis-dubc1-vip97\.adobe\.com$
 (?:^|\.)wwis-dubc1-vip98\.adobe\.com$
 (?:^|\.)wwis-dubc1-vip99\.adobe\.com$
-(?:^|\.)www\.adobeereg\.com$
-(?:^|\.)www\.wip1\.adobe\.com$
-(?:^|\.)www\.wip2\.adobe\.com$
-(?:^|\.)www\.wip3\.adobe\.com$
-(?:^|\.)www\.wip4\.adobe\.com$
-(?:^|\.)www\.wip\.adobe\.com$
+(?:^|\.)adobeereg\.com$
+(?:^|\.)wip1\.adobe\.com$
+(?:^|\.)wip2\.adobe\.com$
+(?:^|\.)wip3\.adobe\.com$
+(?:^|\.)wip4\.adobe\.com$
+(?:^|\.)wip\.adobe\.com$
