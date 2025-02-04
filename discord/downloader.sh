@@ -5,7 +5,7 @@ set -x
 
 # Add domain in ACL file
 add_domain() {
-curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/naruto522ru/ipranges/refs/heads/main/discord/domain.txt > /tmp/"$1"_domain.txt
+curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/$NAME_ACCOUNT_GITHUB/ipranges/refs/heads/main/discord/domain.txt > /tmp/"$1"_domain.txt
 dos2unix /tmp/"$1"_domain.txt
 sort /tmp/"$1"_domain.txt | uniq | sponge /tmp/"$1"_domain.txt
 # Prepare domain
@@ -22,8 +22,8 @@ for domain in $(cat /tmp/${1}_domain_prepare.txt); do echo \(\?\:\^\|\\\.\)${dom
 
 # get CIDR from list
 get_prefix() {
-curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/naruto522ru/ipranges/main/"$1"/ipv4_merged.txt > /tmp/"$1".txt
-curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/naruto522ru/ipranges/main/"$1"/ipv6_merged.txt >> /tmp/"$1".txt
+curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/$NAME_ACCOUNT_GITHUB/ipranges/main/"$1"/ipv4_merged.txt > /tmp/"$1".txt
+curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/$NAME_ACCOUNT_GITHUB/ipranges/main/"$1"/ipv6_merged.txt >> /tmp/"$1".txt
 }
 
 #get_prefix 'discord' || echo 'failed'
@@ -42,7 +42,7 @@ echo -e "[bypass_all]\n[proxy_list]" | tee discord/ipv4.acl
 
 add_domain 'discord' || echo 'failed'
 
-curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/naruto522ru/ipranges/refs/heads/main/discord/ipv4_merged.txt | sed 's/\/32//g' >> discord/ipv4.acl
+curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/$NAME_ACCOUNT_GITHUB/ipranges/refs/heads/main/discord/ipv4_merged.txt | sed 's/\/32//g' >> discord/ipv4.acl
 
 # sort & uniq
 #sort -h /tmp/discord-ipv4.txt | uniq >> discord/ipv4.acl
