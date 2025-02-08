@@ -12,5 +12,5 @@ All lists are obtained from public sources.
 
 ## See also repository:
 
-https://github.com/naruto522ru/ipranges
+https://github.com/you-oops-dev/ipranges
 

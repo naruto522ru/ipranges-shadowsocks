@@ -45,7 +45,7 @@ jobs:
         env:
           LANG: en_US.UTF-8
           CHARSET: UTF-8
-          NAME_ACCOUNT_GITHUB: naruto522ru
+          NAME_ACCOUNT_GITHUB: you-oops-dev
         run: |
           set -euo pipefail
           set -x
