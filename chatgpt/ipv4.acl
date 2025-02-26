@@ -3,7 +3,9 @@
 (?:^|\.)ab\.chatgpt\.com$
 (?:^|\.)aigc-chatgpt\.com$
 (?:^|\.)api\.chatgpt\.com$
+(?:^|\.)cdn\.auth0\.com$
 (?:^|\.)cdn\.chatgpt\.com$
+(?:^|\.)cdnjs\.cloudflare\.com$
 (?:^|\.)chatgpt-async-webps-prod-centralus-0\.chatgpt\.com$
 (?:^|\.)chatgpt-async-webps-prod-centralus-1\.chatgpt\.com$
 (?:^|\.)chatgpt-async-webps-prod-centralus-2\.chatgpt\.com$
@@ -51,6 +53,7 @@
 (?:^|\.)cpcontacts\.openai\.idarkode\.in$
 (?:^|\.)desktop\.chatgpt\.com$
 (?:^|\.)docs\.chatgpt\.com$
+(?:^|\.)featureassets\.org$
 (?:^|\.)files\.oaiusercontent\.com$
 (?:^|\.)hooks-staging\.chatgpt\.com$
 (?:^|\.)httpsoperator\.chatgpt\.com$
@@ -59,6 +62,7 @@
 (?:^|\.)mail\.asistentechatgpt\.com$
 (?:^|\.)manage\.openai\.auth0app\.com$
 (?:^|\.)nb-chatgpt\.com$
+(?:^|\.)oaistatic\.com$
 (?:^|\.)okchatgpt\.com$
 (?:^|\.)opchatgpt\.com$
 (?:^|\.)openai\.chat\.com$
@@ -76,12 +80,14 @@
 (?:^|\.)open\.chatgpt\.com$
 (?:^|\.)openi\.chatgpt\.com$
 (?:^|\.)operator\.chatgpt\.com$
+(?:^|\.)prodregistryv2\.org$
 (?:^|\.)qv3y4\.oai\.com$
 (?:^|\.)repository\.oai\.yamaguchi-u\.ac\.jp$
 (?:^|\.)search\.chatgpt\.com$
 (?:^|\.)sk\.chatgpt\.com$
 (?:^|\.)snc\.chatgpt\.com$
 (?:^|\.)socialmediamarketingwithchatgpt\.com$
+(?:^|\.)spinningup\.openai$
 (?:^|\.)staging\.chatgpt\.com$
 (?:^|\.)storyclone\.chatgpt\.com$
 (?:^|\.)validator\.oaipmh\.com$
