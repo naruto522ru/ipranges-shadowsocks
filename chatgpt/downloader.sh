@@ -8,6 +8,41 @@ set -x
 add_domain() {
 curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/antonme/ipnames/master/dns-openai.txt > /tmp/"$1"_domain.txt
 curl --max-time 30 --retry-delay 3 --retry 10 -4s -# https://raw.githubusercontent.com/antonme/ipnames/master/ext-dns-openai.txt >> /tmp/"$1"_domain.txt
+echo 'ab.chatgpt.com
+api.openai.com
+arena.openai.com
+auth.openai.com
+auth0.openai.com
+beta.api.openai.com
+beta.openai.com
+blog.openai.com
+cdn.oaistatic.com
+cdn.openai.com
+community.openai.com
+contest.openai.com
+debate-game.openai.com
+discuss.openai.com
+files.oaiusercontent.com
+gpt3-openai.com
+gym.openai.com
+help.openai.com
+ios.chat.openai.com
+jukebox.openai.com
+labs.openai.com
+microscope.openai.com
+oaistatic.com
+openai.com
+openai.fund
+openai.org
+platform.api.openai.com
+platform.openai.com
+spinningup.openai
+chat.openai.com
+chatgpt.com
+featureassets.org
+cdnjs.cloudflare.com
+cdn.auth0.com
+prodregistryv2.org' >> /tmp/"$1"_domain.txt
 dos2unix /tmp/"$1"_domain.txt
 sort /tmp/"$1"_domain.txt | uniq | sponge /tmp/"$1"_domain.txt
 # Prepare domain
